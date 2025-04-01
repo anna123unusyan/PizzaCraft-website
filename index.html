@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="icon" type="image/jpeg" href="favicon/favicon.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap"rel="stylesheet"/>
+  </head>
+  <body>
+    <p id="countdown">10</p>
+
+    <div class="header">
+      <img src="images/pizza logo.png" class="logo" />
+      <img
+        src="images/hamburgermenu.png"
+        class="hamburgermenu"
+        onclick="toggleMenu()"
+      />
+
+      <div class="menu">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About us</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="right-container">
+        <img src="images/searche.png" class="searche" />
+        <img src="images/cart.png" class="cartimage" />
+        <span id="cart-count">0</span>
+      </div>
+    </div>
+
+    <h1>Custom and enjoy your pizza</h1>
+
+    <img src="images/pizza.png" class="pizza" />
+    <img src="images/pizza achtergond.jpg" class="background" />
+
+    <div class="Modal">
+      <button class="open-modal">Order now</button>
+      <div class="modal" style="display: none">
+        <button class="close-modal">Order</button>
+      </div>
+    </div>
+
+    <section id="home">
+      <div class="preferences">
+        <h1>Choose your preferences</h1>
+      </div>
+
+      <div class="container">
+        <div class="box1">Anything</div>
+        <div class="box2">Vegetarian</div>
+        <div class="box3">Vegan</div>
+      </div>
+
+      <div class="toppings">
+        <h1>Choose your toppings</h1>
+      </div>
+
+      <div class="toppingcontainer">
+        <div class="image-section">
+          <img id="imageDisplay" src="images/cheese.png" class="topping" />
+        </div>
+
+        <div class="toppings-options">
+          <h2>Select your toppings:</h2>
+          <label><input type="checkbox" class="topping" value="cheese" />
+            Cheese</label>
+          <label><input type="checkbox" class="topping" value="pepperoni" />
+            Pepperoni</label
+          >
+          <label><input type="checkbox" class="topping" value="mushrooms" />
+            Mushrooms</label>
+          <label><input type="checkbox" class="topping" value="Tomatos" />
+            Tomatos</label>
+          <label><input
+              type="checkbox"
+              class="topping"
+              value="Chicken kebab meat"/>
+            Chicken</label>
+        </div>
+      </div>
+      <button id="add-toppings-button">Add toppings</button>
+      <p id="selected-toppings"></p>
+
+      <div class="arrow-container">
+        <div class="circle left-arrow">
+          <span>&#8592;</span>
+        </div>
+        <div class="circle right-arrow">
+          <span>&#8594;</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu">
+      <div class="your">
+        <h1>Choose your menu</h1>
+      </div>
+
+      <div class="menus">
+        <img src="images/margherita pizza.png" class="choose" />
+        <img src="images/bbq chicken pizza.webp" class="choose" />
+        <img src="images/seafood-pizza.png" class="choose" />
+      </div>
+
+      <div class="menu-prices">
+        <button class="menu-price">Margherita(€13)</button>
+        <button class="menu-price">Chicken bbq (€14)</button>
+        <button class="menu-price">Seafood (€16)</button>
+      </div>
+
+      <div class="cart">
+        <button class="add-cart-button">ADD TO CART</button>
+        <button class="add-cart-button">ADD TO CART</button>
+        <button class="add-cart-button">ADD TO CART</button>
+      </div>
+    </section>
+    <section id="about">
+      <div class="about-section">
+        <div class="text-container">
+          <div class="about">
+            <h1>About Us</h1>
+          </div>
+          <div class="quote">
+            <h1>
+              Craft Your Perfect Pizza - <br />Your Pizza, Your Way!<br />
+            </h1>
+          </div>
+          <div class="text">
+            <p>
+              At PizzaCraft, we believe pizza is best when you get to decide
+              what's on it! That's why we let you create your own perfect pizza,
+              just the way you like it.<br />
+              Pick your favorite toppings, sauces, and cheeses—whether you stick
+              to the classics or go wild with something new, it's all up to you.
+              In just a few clicks, we'll craft your pizza fresh and deliver it
+              straight to your door. No rules, just great pizza—made your
+              way!<br />
+            </p>
+          </div>
+        </div>
+        <img src="images/about us pizza.png" class="aboutus" />
+      </div>
+
+      <button class="ABOUT">About us</button>
+    </section>
+
+    <section id="contact">
+      <div class="contact">
+        <h1>Contact us</h1>
+      </div>
+
+      <div class="container-section">
+        <div class="form-section">
+          <p>Name:</p>
+          <input type="text" id="name" placeholder="Your name" />
+
+          <p>Email:</p>
+          <input type="email" id="email" placeholder="Your e-mail" />
+
+          <p>Your message:</p>
+          <input
+            type="message"
+            id="message"
+            placeholder="Typ your message..."
+          />
+
+          <button type="submit">Send</button>
+        </div>
+
+        <div class="info-section">
+          <h2>Contact</h2>
+          <p><strong>Phone:</strong> +32 123 456 789</p>
+          <p><strong>E-mail:</strong> info@pizzacraft.com</p>
+          <p><strong>Opening hours:</strong></p>
+          <p>Mo - Sa: 9:00 - 18:00</p>
+          <p>So: Closed</p>
+          <p><strong>Location:</strong></p>
+          <p>Brusselsesteenweg 550, 9230 Wetteren</p>
+        </div>
+      </div>
+
+      <div class="map">
+        <img src="images/kaart.png" class="kaart" />
+      </div>
+    </section>
+    <div class="pagination">
+      <div class="p1">1</div>
+      <div class="p2">2</div>
+      <div class="p3">3</div>
+      <div class="p4">4</div>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-sections">
+          <div class="footer-column">
+            <h1>Newsletter</h1>
+            <button class="subscribe">Subscribe</button>
+            <p>
+              Subscribe to our newsletter for more info and exclusive offers!
+            </p>
+            <div class="footer-follow">
+              <img class="socials1"
+                src="images/instagram logo.png" alt="Socials"
+              />
+              <img class="socials"
+                src="images/youtube logo.png" alt="Socials"
+              />
+              <img class="socials"
+                src="images/facebook logo.png" alt="Socials"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns">
+        <div class="column1">
+          <p>Pizza</p>
+          <p>Popular</p>
+          <p>Faq</p>
+        </div>
+
+        <div class="column2">
+          <p>Info</p>
+          <p>Contact</p>
+          <p>Adress</p>
+        </div>
+      </div>
+
+      <div class="footer-logo">
+        <img src="images/pizza logo.png" alt="Logo" />
+      </div>
+
+      <p>&copy; PizzaCraft 2025 | Privacy Policy | Cookie Policy</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/anime.js"></script>
+  </body>
+</html>
